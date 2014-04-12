@@ -11,8 +11,8 @@ if (isServer || isdedicated) then
 	if (("CuratorGodMode" call bis_fnc_getParamValue) > 0) then
 	{
 		{
-			_x setcuratorcoef ["place",0];
-			_x setcuratorcoef ["delete",0];
+			_x setcuratorcoef ["place", 0];
+			_x setcuratorcoef ["delete", 0];
 		} foreach _curators;
 	};
 };

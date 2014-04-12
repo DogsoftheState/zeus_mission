@@ -1,28 +1,25 @@
-dev 			= "Joseph Pearson";
-author			= Joseph Pearson;
-OnLoadName 		= COOP - DotS ZGM;
-overviewText		= "Dogs of the State Zeus COOP Mission";
-
-respawn 		= 3;
-respawnDelay 		= 10;
-respawnOnStart 		= 1;
-respawnTemplates[] = {"MenuPosition","MenuInventory","Tickets"};
-respawnTemplatesVirtual[] = {};
-
-corpseLimit 		= 50;
-corpseRemovalMinTime 	= 30;
-corpseRemovalMaxTime 	= 120;
-wreckLimit 		= 16;
-
-disabledAI		= 1;
-joinUnassigned = 0;
-enableDebugConsole = 1;
-allowFunctionsLog = 1;
+dev 						= "Joseph Pearson";
+author						= "Joseph Pearson";
+OnLoadName 					= "COOP - DotS ZGM";
+overviewText				= "Dogs of the State Zeus COOP Mission";
+respawn						= 3;
+respawnDelay				= 10;
+respawnOnStart				= 1;
+respawnTemplates[]			= {"MenuPosition","MenuInventory","Tickets"};
+respawnTemplatesVirtual[]	= {};
+corpseLimit 				= 50;
+corpseRemovalMinTime 		= 30;
+corpseRemovalMaxTime 		= 120;
+wreckLimit 					= 16;
+disabledAI					= 1;
+joinUnassigned 				= 0;
+enableDebugConsole 			= 1;
+allowFunctionsLog 			= 1;
 
 class Header {
 	gameType = ZGM;
 	minPlayers = 1;
-	maxPlayers = 76;
+	maxPlayers = 50;
 };
 
 class Params
@@ -54,6 +51,7 @@ class Params
 	};
 };
 
+
 #include "VAS\menu.hpp"
 
 #include "TAA_name\GUI\TAA_INCLUDE.hpp"
@@ -62,8 +60,24 @@ class Params
 
 #include "outlw_magRepack\MagRepack_config.hpp"
 
+class CfgPatches
+{
+	#include "scriptPresets\cfgPatches.hpp"
+};
+
+class CfgVehicles
+{
+	#include "scriptPresets\cfgVehicles.hpp"
+};
+
+class CfgFactionClasses
+{
+	#include "scriptPresets\cfgFactionClasses.hpp"
+};
+
 class CfgFunctions
 {
+	#include "scriptPresets\cfgFunctions.hpp"
 	#include "cws_injury\cfgFunctionsCWS.hpp"
 	#include "VAS\cfgfunctions.hpp"
 };

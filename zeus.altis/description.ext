@@ -1,3 +1,23 @@
+#include "VAS\menu.hpp"
+
+#include "TAA_name\GUI\TAA_INCLUDE.hpp"
+#include "TAA_name\GUI\TAA_ui_name.hpp"
+#include "TAA_name\GUI\TAA_ui_custom.hpp"
+
+#include "outlw_magRepack\MagRepack_config.hpp"
+
+class CfgFunctions
+{
+	#include "cws_injury\cfgFunctionsCWS.hpp"
+	#include "VAS\cfgfunctions.hpp"
+};
+
+class RscTitles
+{
+	#include "cws_injury\dialogs\rscTitlesCWS.hpp"
+	#include "TAA_name\GUI\TAA_dynamic_name.hpp"
+};
+
 dev 						= "Joseph Pearson";
 author						= "Joseph Pearson";
 OnLoadName 					= "COOP - DotS ZGM";
@@ -49,41 +69,4 @@ class Params
 		texts[] = {0,100,200,500,1000};
 		default = 0;
 	};
-};
-
-
-#include "VAS\menu.hpp"
-
-#include "TAA_name\GUI\TAA_INCLUDE.hpp"
-#include "TAA_name\GUI\TAA_ui_name.hpp"
-#include "TAA_name\GUI\TAA_ui_custom.hpp"
-
-#include "outlw_magRepack\MagRepack_config.hpp"
-
-class CfgPatches
-{
-	#include "scriptPresets\cfgPatches.hpp"
-};
-
-class CfgVehicles
-{
-	#include "scriptPresets\cfgVehicles.hpp"
-};
-
-class CfgFactionClasses
-{
-	#include "scriptPresets\cfgFactionClasses.hpp"
-};
-
-class CfgFunctions
-{
-	#include "scriptPresets\cfgFunctions.hpp"
-	#include "cws_injury\cfgFunctionsCWS.hpp"
-	#include "VAS\cfgfunctions.hpp"
-};
-
-class RscTitles
-{
-	#include "cws_injury\dialogs\rscTitlesCWS.hpp"
-	#include "TAA_name\GUI\TAA_dynamic_name.hpp"
 };

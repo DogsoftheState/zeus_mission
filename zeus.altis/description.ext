@@ -32,7 +32,8 @@ corpseRemovalMinTime 		= 30;
 corpseRemovalMaxTime 		= 120;
 wreckLimit 					= 16;
 disabledAI					= 1;
-joinUnassigned 				= 0;
+joinUnassigned 				= 1;
+aiKills						= 1;
 enableDebugConsole 			= 1;
 allowFunctionsLog 			= 1;
 

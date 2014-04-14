@@ -30,7 +30,9 @@ class Mission
 		"A3_Data_F_Curator_Virtual",
 		"A3_Characters_F_BLUFOR",
 		"A3_Missions_F_Curator",
-		"A3_Structures_F_Ind_Cargo"
+		"A3_Structures_F_Ind_Cargo",
+		"A3_Soft_F_Quadbike",
+		"a3_soft_f_beta_quadbike"
 	};
 	addOnsAuto[]=
 	{
@@ -41,7 +43,6 @@ class Mission
 		"A3_Missions_F_Curator",
 		"A3_Modules_F_Intel",
 		"A3_Data_F_Curator_Virtual",
-		"A3_Structures_F_Ind_Cargo",
 		"a3_map_altis"
 	};
 	class Intel
@@ -2015,52 +2016,43 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14665.154,17.91,16757.127};
-					azimut=0.1;
+					position[]={7966.2168,142.22226,14352.316};
 					class args
 					{
-						items=2;
+						items=4;
 						class Item0
 						{
 							value="bis_curator";
-							parentCls="ModuleCuratorAddEditableObjects";
+							parentCls="ModuleCuratorAddAddons_F";
 							typeName="Curator";
 						};
 						class Item1
 						{
-							value="0";
-							parentCls="ModuleCuratorAddEditableObjects";
-							typeName="AddCrew";
+							value="1";
+							parentCls="ModuleCuratorAddAddons_F";
+							typeName="Mode";
+						};
+						class Item2
+						{
+							value="";
+							parentCls="ModuleCuratorAddAddons_F";
+							typeName="Text";
+						};
+						class Item3
+						{
+							value="curatorPresets_Module";
+							parentCls="ModuleCuratorAddAddons_F";
+							typeName="Addons";
 						};
 					};
 					id=68;
 					side="LOGIC";
-					vehicle="ModuleCuratorAddEditableObjects";
+					vehicle="ModuleCuratorAddAddons_F";
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
-					syncId=16;
-					synchronizations[]={17};
 				};
 			};
-		};
-	};
-	class Vehicles
-	{
-		items=1;
-		class Item0
-		{
-			position[]={14665.891,17.91,16742.072};
-			azimut=0.1;
-			id=69;
-			side="EMPTY";
-			vehicle="Land_CargoBox_V1_F";
-			leader=1;
-			skill=0.60000002;
-			text="Virtual_Ammobox_System";
-			init="this addAction [format[""<t color='#F0F000'>Virtual Ammobox</t>""], ""VAS\open.sqf"", this, 100, true];";
-			syncId=17;
-			synchronizations[]={16};
 		};
 	};
 };

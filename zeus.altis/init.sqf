@@ -8,7 +8,6 @@ if (isServer || isdedicated) then
 	
 	{
 		_x addCuratorAddons ["curatorPresets_Module"];
-		_x addCuratorAddons ["curatorPresets_ModuleVAS"];
 	} foreach _curators;
 };
 

@@ -19,7 +19,6 @@ class Mission
 		"A3_Weapons_F_Ammoboxes",
 		"A3_Soft_F_Car",
 		"A3_Soft_F_Offroad_01",
-		"A3_Modules_F_Supports",
 		"A3_Air_F_Beta_Heli_Attack_02",
 		"A3_Air_F_Heli_Light_02",
 		"A3_Modules_F_Multiplayer",
@@ -32,7 +31,8 @@ class Mission
 		"A3_Missions_F_Curator",
 		"A3_Structures_F_Ind_Cargo",
 		"A3_Soft_F_Quadbike",
-		"a3_soft_f_beta_quadbike"
+		"a3_soft_f_beta_quadbike",
+		"a3_characters_f_beta"
 	};
 	addOnsAuto[]=
 	{
@@ -89,10 +89,10 @@ class Mission
 					azimut=282.29001;
 					id=1;
 					side="EAST";
-					vehicle="O_Soldier_F";
+					vehicle="O_soldier_repair_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					description="@STR_MPTABLE_NAME";
+					description="Repair Specialist";
 				};
 				class Item2
 				{
@@ -100,10 +100,10 @@ class Mission
 					azimut=282.29001;
 					id=2;
 					side="EAST";
-					vehicle="O_Soldier_F";
+					vehicle="O_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					description="@STR_MPTABLE_NAME";
+					description="Combat Life Saver";
 				};
 				class Item3
 				{
@@ -155,11 +155,11 @@ class Mission
 					azimut=67.676498;
 					id=6;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					description="@STR_MPTABLE_NAME";
+					description="Combat Life Saver";
 				};
 				class Item3
 				{
@@ -167,11 +167,11 @@ class Mission
 					azimut=67.676498;
 					id=7;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_soldier_repair_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					description="@STR_MPTABLE_NAME";
+					description="Repair Specialist";
 				};
 			};
 		};
@@ -211,10 +211,10 @@ class Mission
 					azimut=67.676498;
 					id=10;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					description="@STR_MPTABLE_NAME";
+					description="Combat Life Saver";
 				};
 				class Item3
 				{
@@ -222,10 +222,10 @@ class Mission
 					azimut=67.676498;
 					id=11;
 					side="WEST";
-					vehicle="B_Soldier_F";
+					vehicle="B_soldier_repair_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					description="@STR_MPTABLE_NAME";
+					description="Repair Specialist";
 				};
 			};
 		};
@@ -362,10 +362,10 @@ class Mission
 					azimut=282.29001;
 					id=21;
 					side="EAST";
-					vehicle="O_Soldier_F";
+					vehicle="O_soldier_repair_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					description="@STR_MPTABLE_NAME";
+					description="Repair Specialist";
 				};
 				class Item2
 				{
@@ -384,10 +384,10 @@ class Mission
 					azimut=282.29001;
 					id=23;
 					side="EAST";
-					vehicle="O_Soldier_F";
+					vehicle="O_medic_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					description="@STR_MPTABLE_NAME";
+					description="Combat Life Saver";
 				};
 			};
 		};
@@ -816,7 +816,7 @@ class Mission
 					skill=0.60000002;
 					text="bis_curator";
 					syncId=1;
-					synchronizations[]={0,2,3,4,5,11,14,13,12,15,6,7,8,9};
+					synchronizations[]={0,2,3,4,5,11,14,13,12,15,6,7,8,9,16};
 				};
 			};
 		};
@@ -1411,7 +1411,7 @@ class Mission
 					skill=0.60000002;
 					text="bis_curator_1";
 					syncId=10;
-					synchronizations[]={4,3,5,11,2,0,14,13,12,15};
+					synchronizations[]={4,3,5,11,2,0,14,13,12,15,16};
 				};
 			};
 		};
@@ -2022,7 +2022,7 @@ class Mission
 						items=4;
 						class Item0
 						{
-							value="bis_curator";
+							value="";
 							parentCls="ModuleCuratorAddAddons_F";
 							typeName="Curator";
 						};
@@ -2051,6 +2051,8 @@ class Mission
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
+					syncId=16;
+					synchronizations[]={1,10};
 				};
 			};
 		};

@@ -1,20 +1,3 @@
-//---------------------------------------------
-//		Server Init
-//---------------------------------------------
-if (isServer || isdedicated) then 
-{
-	_curator = allcurators select 0;
-	_curators = allcurators;
-	
-	{
-		_x addCuratorAddons ["curatorPresets_Module"];
-	} foreach _curators;
-};
-
-//---------------------------------------------
-//		Global Init
-//---------------------------------------------
-
 //--------------------------CWS -------------------------------------------------
 call compile preprocessFile "cws_injury\cws_init.sqf";
 
@@ -35,18 +18,3 @@ call compile preprocessFile "cws_injury\cws_init.sqf";
 // Source: ??
 
 [] execVM "group_manager\group_manager.sqf";
-
-//----------------------Task Force Radio-----------------------------------------
-// Source: https://github.com/michail-nikolaev/task-force-arma-3-radio/
-
-tf_no_auto_long_range_radio = true;
-
-//tf_same_sw_frequencies_for_side = true;
-//tf_freq_west = 31;
-//tf_freq_east = 31;
-//tf_freq_guer = 31;
-
-//tf_same_lr_frequencies_for_side = true;
-//tf_freq_west_lr = 51;
-//tf_freq_east_lr = 51;
-//tf_freq_guer_lr = 51;

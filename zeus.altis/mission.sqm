@@ -2040,7 +2040,7 @@ class Mission
 						};
 						class Item3
 						{
-							value="curatorPresets_Module";
+							value="""curatorPresets_Module""";
 							parentCls="ModuleCuratorAddAddons_F";
 							typeName="Addons";
 						};

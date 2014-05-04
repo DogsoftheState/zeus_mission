@@ -8,53 +8,51 @@
 
 class CfgFunctions
 {
-	#include "cws_injury\cfgFunctionsCWS.hpp"
 	#include "VAS\cfgfunctions.hpp"
 };
 
 class RscTitles
 {
-	#include "cws_injury\dialogs\rscTitlesCWS.hpp"
 	#include "TAA_name\GUI\TAA_dynamic_name.hpp"
 };
 
 dev 						= "Joseph Pearson";
 author						= "Joseph Pearson";
-OnLoadName 					= "COOP - DotS ZGM";
+onLoadName 					= "COOP - DotS ZGM";
 overviewText				= "Dogs of the State Zeus COOP Mission";
-respawn						= 3;
+overviewPicture				= "\a3\Missions_F_curator\data\img\mp_zgm_m11_overview_ca.paa";
+
+respawn						= 2;
 respawnDelay				= 10;
 respawnOnStart				= 1;
 respawnTemplates[]			= {"MenuPosition","MenuInventory","Tickets"};
 respawnTemplatesVirtual[]	= {};
-corpseLimit 				= 50;
-corpseRemovalMinTime 		= 30;
-corpseRemovalMaxTime 		= 120;
-wreckLimit 					= 16;
+
 disabledAI					= 1;
 joinUnassigned 				= 1;
 aiKills						= 1;
+
 enableDebugConsole 			= 1;
 allowFunctionsLog 			= 1;
 
 class Header {
 	gameType = ZGM;
 	minPlayers = 1;
-	maxPlayers = 50;
+	maxPlayers = 51;
 };
 
 class Params
 {
 	class CuratorGodMode
 	{
-		title = CuratorGodMode;
+		title = $STR_A3_MP_ZGM_m11.Altis_Params_CuratorUnlock;
 		values[] = {0,1};
 		texts[] = {$STR_DISABLED,$STR_ENABLED};
 		default = 1;
 	};
 	class CuratorModeratorRights
 	{
-		title = CuratorModeratorRights;
+		title = $STR_A3_MP_ZGM_m11.Altis_Params_CuratorModeratorRights;
 		values[] = {0,1,2};
 		texts[] = {
 			$STR_A3_MP_ZGM_m11.Altis_Params_CuratorModeratorRights_0,
@@ -70,4 +68,6 @@ class Params
 		texts[] = {0,100,200,500,1000};
 		default = 0;
 	};
+	#include "\a3\functions_f\Params\paramGuerFriendly.hpp"
+	#include "\a3\functions_f\Params\paramDebugConsole.hpp"
 };

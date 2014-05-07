@@ -45,7 +45,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=33;
+		items=32;
 		class Item0
 		{
 			side="EAST";
@@ -1750,11 +1750,23 @@ class Mission
 			side="LOGIC";
 			class Vehicles
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
-					position[]={14727.889,17.91,16619.686};
+					position[]={14727.054,17.91,16649.107};
 					id=62;
+					side="LOGIC";
+					vehicle="VirtualCurator_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					text="bis_curatorUnit";
+					description="Game Master";
+				};
+				class Item1
+				{
+					position[]={14727.889,17.91,16619.686};
+					id=63;
 					side="LOGIC";
 					vehicle="VirtualCurator_F";
 					player="PLAY CDG";
@@ -1766,26 +1778,6 @@ class Mission
 			};
 		};
 		class Item27
-		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={14727.054,17.91,16649.107};
-					id=63;
-					side="LOGIC";
-					vehicle="VirtualCurator_F";
-					player="PLAYER COMMANDER";
-					leader=1;
-					skill=0.60000002;
-					text="bis_curatorUnit";
-					description="Game Master";
-				};
-			};
-		};
-		class Item28
 		{
 			side="LOGIC";
 			class Vehicles
@@ -1828,7 +1820,7 @@ class Mission
 				};
 			};
 		};
-		class Item29
+		class Item28
 		{
 			side="LOGIC";
 			class Vehicles
@@ -1913,7 +1905,7 @@ class Mission
 				};
 			};
 		};
-		class Item30
+		class Item29
 		{
 			side="LOGIC";
 			class Vehicles
@@ -1963,7 +1955,7 @@ class Mission
 				};
 			};
 		};
-		class Item31
+		class Item30
 		{
 			side="LOGIC";
 			class Vehicles
@@ -2013,7 +2005,7 @@ class Mission
 				};
 			};
 		};
-		class Item32
+		class Item31
 		{
 			side="LOGIC";
 			class Vehicles

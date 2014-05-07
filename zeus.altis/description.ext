@@ -20,7 +20,7 @@ dev 						= "Joseph Pearson";
 author						= "Joseph Pearson";
 onLoadName 					= "COOP - DotS ZGM";
 overviewText				= "Dogs of the State Zeus COOP Mission";
-overviewPicture				= "\a3\Missions_F_curator\data\img\mp_zgm_m11_overview_ca.paa";
+overviewPicture				= "images\dots_logo_ca.paa";
 
 respawn						= 2;
 respawnDelay				= 10;
@@ -38,7 +38,7 @@ allowFunctionsLog 			= 1;
 class Header {
 	gameType = ZGM;
 	minPlayers = 1;
-	maxPlayers = 51;
+	maxPlayers = 50;
 };
 
 class Params

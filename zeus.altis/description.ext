@@ -1,21 +1,3 @@
-#include "VAS\menu.hpp"
-
-#include "TAA_name\GUI\TAA_INCLUDE.hpp"
-#include "TAA_name\GUI\TAA_ui_name.hpp"
-#include "TAA_name\GUI\TAA_ui_custom.hpp"
-
-#include "outlw_magRepack\MagRepack_config.hpp"
-
-class CfgFunctions
-{
-	#include "VAS\cfgfunctions.hpp"
-};
-
-class RscTitles
-{
-	#include "TAA_name\GUI\TAA_dynamic_name.hpp"
-};
-
 dev 						= "Joseph Pearson";
 author						= "Joseph Pearson";
 onLoadName 					= "COOP - DotS ZGM";
@@ -68,6 +50,22 @@ class Params
 		texts[] = {0,100,200,500,1000};
 		default = 0;
 	};
-	#include "\a3\functions_f\Params\paramGuerFriendly.hpp"
-	#include "\a3\functions_f\Params\paramDebugConsole.hpp"
+};
+
+#include "VAS\menu.hpp"
+
+#include "TAA_name\GUI\TAA_INCLUDE.hpp"
+#include "TAA_name\GUI\TAA_ui_name.hpp"
+#include "TAA_name\GUI\TAA_ui_custom.hpp"
+
+#include "outlw_magRepack\MagRepack_config.hpp"
+
+class CfgFunctions
+{
+	#include "VAS\cfgfunctions.hpp"
+};
+
+class RscTitles
+{
+	#include "TAA_name\GUI\TAA_dynamic_name.hpp"
 };
